@@ -10,7 +10,7 @@
     <form name="form1" action="" method="GET">
         <table border="1" align="center">
             <tr>
-                <th colspan="2">Registro de Estudiantes</th>
+                <th colspan="4">Registro de Estudiantes</th>
             </tr>
             <tr>
                 <td align="center">
@@ -18,10 +18,30 @@
                 </td>
                 <td>
                     <input type="text" name="nombre" placeholder="Introduzca su nombre"> </td>
+                <td align="center">
+                    <label for="apellido">Apellido: </label>
+                </td>
+                <td>
+                    <input type="text" name="apellido" placeholder="Introduzca su apellido"> </td>
             </tr>
-            <tr>               
-                <td colspan="2" align="center"><input type="submit" name="Enviar"></td>
+            <tr>
+                <td align="center">
+                    <label for="cedula">Cedula: </label>
+                </td>
+                <td>
+                    <input type="number" name="cedula" placeholder="Ej 123456789"> </td>
+                <td align="center">
+                    <label for="fechadenacimiento">Fecha de nacimiento: </label>
+                </td>
+                <td>
+                    <input type="date" name="fechadenacimiento" > </td>
+            </tr>
+            <tr>
                 <tr>
+                    <td colspan="4" align="center">
+                        <input type="submit" name="Enviar">
+                    </td>
+                    <tr>
         </table>
     </form>
 </body>
