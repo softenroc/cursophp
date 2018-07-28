@@ -3,46 +3,143 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title Formulario></title>
 </head>
 
 <body>
-    <form name="form1" action="" method="GET">
-        <table border="1" align="center">
-            <tr>
-                <th colspan="4">Registro de Estudiantes CURSO PHP</th>
-            </tr>
-            <tr>
-                <td align="center">
-                    <label for="nombre">Nombre: </label>
-                </td>
-                <td>
-                    <input type="text" name="nombre" placeholder="Introduzca su nombre"> </td>
-                <td align="center">
-                    <label for="apellido">Apellido: </label>
-                </td>
-                <td>
-                    <input type="text" name="apellido" placeholder="Introduzca su apellido"> </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <label for="cedula">Cedula: </label>
-                </td>
-                <td>
-                    <input type="number" name="cedula" placeholder="Ej 123456789"> </td>
-                <td align="center">
-                    <label for="fechadenacimiento">Fecha de nacimiento: </label>
-                </td>
-                <td>
-                    <input type="date" name="fechadenacimiento" > </td>
-            </tr>
-            <tr>
+    <form name="form1" action="ejemplo1.php" method="POST">
+        <p></p>
+        <p> </p>
+        <div class="well">
+            <div align="center">
+                <h4><div class="label label-primary">Registro de Estudiantes CURSO PHP</div></h4></div>
+            <p>&nbsp</p>
+            <table border="0" align="center" width="700">
                 <tr>
-                    <td colspan="4" align="center">
+                    <td align="left">
+                        <label for="nombre" class="label label-default">Nombre:&nbsp </label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" placeholder="Introduzca su nombre" class="form-control"> </td>
+                    <td width="100">&nbsp</td>
+                    <td align="left">
+                        <label for="apellido" class="label label-default">Apellido: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="apellido" placeholder="Introduzca su apellido" class="form-control"> </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="cedula" class="label label-default">Cedula: </label>
+                    </td>
+                    <td>
+                        <input type="number" name="cedula" placeholder="Ej 123456789" class="form-control"> </td>
+                    <td>&nbsp</td>
+                    <td align="left">
+                        <label for="fechadenacimiento" class="label label-default">Fecha de nacimiento: </label>
+                    </td>
+                    <td>
+                        <input type="date" name="fechadenacimiento" class="form-control"> </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="ciudad" class="label label-default">Ciudad: </label>
+                    </td>
+                    <td>
+                        <select name="ciudad" id="ciudad" class="form-control">
+                            <option value="0">Seleccione una ciudad</option>
+                            <option value="1">Bogota</option>
+                            <option value="2">Medellin</option>
+                            <option value="3">Cali</option>
+                            <option value="4">Popayan</option>
+                            <option value="5" selected>Pasto</option>
+                            <option value="6">Bucaramanga</option>
+                        </select>
+                    </td>
+                    <td>&nbsp</td>
+                    <td align="left">
+                        <label for="genero" class="label label-default">Genero: </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="genero" id="genero" value="1"> Femenino
+                        <br>
+                        <input type="radio" name="genero" id="genero" value="2"> Masculino
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="usuario" class="label label-default">Usuario: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="usuario" placeholder="Ingrese el login" required class="form-control"> </td>
+                    <td>&nbsp</td>
+                    <td align="left">
+                        <label for="password" class="label label-default">Contaseña: </label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" placeholder="minimo 8 credenciales" required class="form-control"> </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="correo" class="label label-default">Correo: </label>
+                    </td>
+                    <td>
+                        <input type="email" name="correo" placeholder="yyy@mail.org" required class="form-control"> </td>
+                    <td>&nbsp</td>
+                    <td align="left">
+                        <label for="direccion" class="label label-default">Direccion: </label>
+                    </td>
+                    <td>
+                        <textarea name="direccion" id="direccion" cols="25" rows="4" class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="pasatiempo" class="label label-default">Pasatiempo: </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="pasatiempo[]" value="1">Videojuegos
+                        <br>
+                        <input type="checkbox" name="pasatiempo[]" value="2">Caminata
+                        <br>
+                        <input type="checkbox" name="pasatiempo[]" value="3">Series
+                        <br>
+                        <input type="checkbox" name="pasatiempo[]" value="4">Deporte
+                        <br>
+                    </td>
+                    <td>&nbsp</td>
+                    <td>
+                        <label for="localidad" class="label label-default">Localidad: </label>
+                    </td>
+                    <td>
+                        <input list="localidad" name="localidad">
+                        <datalist id="localidad">
+                            <option value="Teusaquillo"></option>
+                            <option value="Chapinero"></option>
+                            <option value="Fontibon"></option>
+                            <option value="Candelaria"></option>
+                            <option value="Rafael Uribe"></option>
+                            <option value="Bosa"></option>
+                            <option value="Kennedy"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5">&nbsp</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left">
+                        <input type="reset" name="Limpiar">
+                    </td>
+                    <td>&nbsp</td>
+                    <td colspan="2" align="right">
                         <input type="submit" name="Enviar">
                     </td>
                     <tr>
-        </table>
+            </table>
+        </div>
     </form>
 </body>
 

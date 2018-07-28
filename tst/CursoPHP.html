@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Untitled Test Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">registro estudiante</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:8080/cursophp/ejemploformulario.html<datalist><option>http://localhost:8080/cursophp/ejemploformulario.html</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=nombre<datalist><option>name=nombre</option><option>//input[@name='nombre']</option><option>//input</option><option>css=input[name="nombre"]</option></datalist></td><td>Dario</td>
+</tr>
+<tr><td>type</td><td>name=apellido<datalist><option>name=apellido</option><option>//input[@name='apellido']</option><option>//td[5]/input</option><option>css=input[name="apellido"]</option></datalist></td><td>Rojas</td>
+</tr>
+<tr><td>type</td><td>name=cedula<datalist><option>name=cedula</option><option>//input[@name='cedula']</option><option>//tr[2]/td[2]/input</option><option>css=input[name="cedula"]</option></datalist></td><td>87219345</td>
+</tr>
+<tr><td>click</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td>0001-04-02</td>
+</tr>
+<tr><td>type</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td>0019-04-02</td>
+</tr>
+<tr><td>type</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td>0198-04-02</td>
+</tr>
+<tr><td>type</td><td>name=fechadenacimiento<datalist><option>name=fechadenacimiento</option><option>//input[@name='fechadenacimiento']</option><option>//tr[2]/td[5]/input</option><option>css=input[name="fechadenacimiento"]</option></datalist></td><td>1985-04-02</td>
+</tr>
+<tr><td>click</td><td>id=ciudad<datalist><option>id=ciudad</option><option>name=ciudad</option><option>//select[@id='ciudad']</option><option>//select</option><option>css=#ciudad</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=ciudad<datalist><option>id=ciudad</option><option>name=ciudad</option><option>//select[@id='ciudad']</option><option>//select</option><option>css=#ciudad</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@id='genero'])[2]<datalist><option>xpath=(//input[@id='genero'])[2]</option><option>//input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//tr[4]/td[2]/input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//tr[4]/td[2]/input</option><option>css=input[name="usuario"]</option></datalist></td><td>dfrojas</td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//tr[4]/td[5]/input</option><option>css=input[name="password"]</option></datalist></td><td>015791</td>
+</tr>
+<tr><td>type</td><td>name=correo<datalist><option>name=correo</option><option>//input[@name='correo']</option><option>//tr[5]/td[2]/input</option><option>css=input[name="correo"]</option></datalist></td><td>dario@gmail.com</td>
+</tr>
+<tr><td>type</td><td>id=direccion<datalist><option>id=direccion</option><option>name=direccion</option><option>//textarea[@id='direccion']</option><option>//textarea</option><option>css=#direccion</option></datalist></td><td>kra 30 con 46</td>
+</tr>
+<tr><td>click</td><td>name=pasatiempo[]<datalist><option>name=pasatiempo[]</option><option>//input[@name='pasatiempo[]']</option><option>//tr[6]/td[2]/input</option><option>css=input[name="pasatiempo[]"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='pasatiempo[]'])[4]<datalist><option>xpath=(//input[@name='pasatiempo[]'])[4]</option><option>//input[4]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=localidad<datalist><option>name=localidad</option><option>//input[@name='localidad']</option><option>//tr[6]/td[5]/input</option><option>css=input[name="localidad"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=localidad<datalist><option>name=localidad</option><option>//input[@name='localidad']</option><option>//tr[6]/td[5]/input</option><option>css=input[name="localidad"]</option></datalist></td><td>Teusaquillo</td>
+</tr>
+<tr><td>click</td><td>name=Enviar<datalist><option>name=Enviar</option><option>//input[@name='Enviar']</option><option>//td[3]/input</option><option>css=input[name="Enviar"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
